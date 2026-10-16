@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.Python
+env/
+venv/
+.venv/
+.env
+
+# Local databases and raw scrape output (regenerate with src/data/scrape.py)
+*.db
+data/raw/
+
+# Derived feature tables and model artifacts (regenerate with the pipeline)
+data/features/*.parquet
+models/
+*.joblib
+*.pkl
+
+# Builds
+dist/
+build/
+*.exe
+*.spec
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

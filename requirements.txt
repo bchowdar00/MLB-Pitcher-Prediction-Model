@@ -1,0 +1,15 @@
+# Reproduce the evaluation (python src/evaluate.py).
+# Pinned to the versions the committed numbers were produced with.
+numpy==2.5.4
+pandas==3.0.6
+scikit-learn==1.9.1
+xgboost==3.4.1
+
+# scripts/fetch_game_dates.py uses the standard library only (no deps).
+
+# Scrape only: rebuilding data/features/pitcher_games_enhanced.csv from
+# Statcast (src/data/scrape.py). Not needed to reproduce the evaluation.
+# pybaseball==2.2.7
+# sqlalchemy==2.0.35
+# tqdm==4.66.5
+# python-dotenv==1.0.1
